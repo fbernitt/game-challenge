@@ -1,0 +1,1 @@
+{:projects [{:repository "git@localhost:User/repo.git" :members [{:name "Tester", :email "test@test.de"}]}]}
