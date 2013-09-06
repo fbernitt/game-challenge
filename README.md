@@ -1,6 +1,8 @@
 # game-challenge
 
-A Clojure library designed to ... well, that part is up to you.
+[![Build Status](https://travis-ci.org/TheCodEx/game-challenge.png?branch=master)](https://travis-ci.org/TheCodEx/game-challenge)
+
+A server to host a programmer's game challenge.
 
 ## Usage
 
