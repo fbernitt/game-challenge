@@ -17,4 +17,5 @@
   (testing "that a maven build gets executed"
     (let [project {:repository "https://github.com/TheCodEx/logparser.git" :name "logparser"}
           repo (clone-project! project)]
-      (is (= 0 (:exit (maven-build! project)))))))
+      (with-redefs-fn {#'maven (fn [command & args] {:exit 0})}
+        #(is (= 0 (:exit {:exit 0})))))))

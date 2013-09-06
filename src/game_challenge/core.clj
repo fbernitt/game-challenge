@@ -20,7 +20,7 @@
   [command & args]
   (apply shell/sh (cons *git* (cons command args))))
 
-(defn- maven
+(defn maven
   [command & args]
   (apply shell/sh (cons *mvn* (cons command args))))
 
